@@ -21,7 +21,7 @@ html,body {
     align-items: center;
     justify-content: space-around;
     background-position:center center;
-    background-image: url('./assets/image/miho-beach-japan.jpg') ; 
+    background-image: url('/QuanLyChiTieu/assets/image/miho-beach-japan.jpg') ; 
     background-repeat: no-repeat;
     background-size: cover;
 }
