@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Budgets</title> 
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div id="main">
+
+        <div class="show">
+            <p class="title">Available Budgets </p>
+            <div class="budget">
+                00.00
+            </div>
+            <div class="total-income">
+                <p>TOTAL INCOME</p>
+                <div class="income">
+                    00.00
+                </div>
+            </div>
+            <div class="total-expense">
+                <p>TOTAL EXPENSE</p>
+                <div class="expense">
+                    00.00
+                    <i class="percent">...</i>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="add">
+            <select class="select-feature">
+                <option> + </option>
+                <option> - </option>
+            </select>
+            <input type="text" placeholder="Add description" required name="" class="add-description">
+            <input type="number" step="1000000" placeholder="value" required name=""  class="value" min="0" >
+            <i class="btnAdd ti-plus"></i>
+            
+        </div>
+
+
+        <div  class="text">
+            <p>INCOME</p>
+            <p>EXPENSE</p>
+        </div >
+
+        <div class="list">
+            <div class="list-income">
+                
+                
+            </div>
+            <div class="list-expense">
+                
+
+            </div>
+        </div>
+
+
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html,body {
+    font-family:Arial, Helvetica, sans-serif
+}
+
+
+#main{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.show{
+    width:100%;
+    height: 300px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-position:center center;
+    background-image: url('/XayDungWebQuanLyChiTieu/assets/image/miho-beach-japan.jpg') ; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title{
+    color: #fff;
+    font-size:25px;
+    padding: 15px 0px;
+    background-clip: content-box;
+    font-weight: 600;
+    letter-spacing:3px;
+}
+.budget{
+    color: #fff;
+    font-size:90px;
+    letter-spacing:8px;
+    font-stretch: extra-condensed;
+}
+.total-income{
+    background-color: rgb(10, 240, 221);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 15px 20px;
+    width: 480px;
+    color: rgb(126, 125, 125);
+    border-radius: 4px;
+    font-weight: 500;
+    
+}
+.income{    
+    color: #fff;
+    letter-spacing:2px;
+    font-stretch: extra-condensed;
+    font-size: 24px;
+    margin-right: 40px;
+}
+.total-expense{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: rgb(240, 63, 87);
+    padding: 15px 20px;
+    width: 480px;
+    color: rgb(126, 125, 125);
+    border-radius: 4px;
+    font-weight: 500;
+    
+}
+.expense{
+    color: #fff;
+    letter-spacing:2px;
+    font-stretch: extra-condensed;
+    font-size: 24px;
+
+}
+
+.percent {
+    width: 30px;
+    font-style: normal;
+    font-size: 12px;
+    padding: 5px 10px;
+    background-color: rgb(238, 157, 168);
+    border-radius:10px;
+    margin-bottom: 4px;
+}
+
+.percentListExpense{
+    width: 30px;
+    font-style: normal;
+    font-size: 12px;
+    padding: 5px 10px;
+    background-color: rgb(240, 223, 226);
+    border-radius:10px;
+    margin-bottom: 4px;
+}
+
+
+.add{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height:80px;
+    background-color: #ddd;
+    width:100%;
+
+}
+.select-feature{
+    padding: 10px 8px;
+    border-radius: 4px;
+    margin: 0px 12px;
+    width: 60px;
+    font-size: 24px;
+    border: 1px solid rgb(10, 199, 247);
+    outline: none;
+}
+
+
+.add-description{
+    padding: 12px 8px;
+    border-radius: 4px;
+    margin: 0px 12px;
+    width: 480px;
+    border: 1px solid rgb(10, 199, 247);
+    font-size: 20px;
+    outline-color: rgb(252, 137, 137);
+}
+.value{
+    padding: 12px 8px;
+    border-radius: 4px;
+    margin: 0px 12px;
+    width: 120px;
+    border: 1px solid rgb(10, 199, 247);
+    font-size: 20px;
+    outline-color: rgb(252, 137, 137);
+}
+.btnAdd {
+    padding: 10px 10px;
+    border-radius: 50%;
+    margin: 0px 12px;
+    border: 1px solid rgb(10, 199, 247);
+    color: rgb(10, 199, 247);
+    font-size:20px;
+    cursor: pointer;
+}
+.btnAdd:hover {
+    
+    background-color: rgb(202, 247, 247);
+}
+
+.text{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    
+
+}
+
+.text>p:first-child{
+    color: rgb(10, 240, 221);
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-left: 15%;
+    width:100%;
+   
+}
+
+.text>p:last-child{
+    color: rgb(241, 133, 169);
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-left: -3%;
+    width:100%;
+}
+
+
+
+.list{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+}
+
+.list  ul {
+    list-style-type: none;
+}
+.list-income{
+    width: 1100px;
+    margin-left: 15%;
+    margin-right: 100px;
+}
+
+.close-icon-income{
+    padding: 3px 3px;
+    margin-left:10px;
+    border-radius: 50%;
+    font-size:10px;
+    border: 1px solid rgb(30, 233, 233);
+    display:none;
+}
+
+
+.list-child-income:hover .close-icon-income {
+    display:inline;
+}
+.list-child-income:hover{
+    background-color: rgb(245, 239, 239);
+}
+
+
+.close-icon-expense{
+    padding: 3px 3px;
+    margin-left:10px;
+    border-radius: 50%;
+    font-size:10px;
+    border: 1px solid rgb(241, 17, 36);
+    display:none;
+}
+
+.list-child-expense:hover .close-icon-expense {
+    display:inline;
+}
+.list-child-expense:hover{
+    background-color: rgb(245, 239, 239);
+}
+
+.list-expense{
+    width: 1100px;
+    margin-right: 15%;
+    margin-left: 100px;
+}
+
+
+
+.list-child-income{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    height:36px
+}
+
+.list-child-expense{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    height:36px;  
+}
+
+.list-title{
+    margin-left: 10px;
+    opacity: 0.8;
+}
+
+.list-number-income{
+    color: rgb(10, 199, 247);
+}
+
+.list-number-expense{
+    color: rgb(247, 127, 127)
+}
